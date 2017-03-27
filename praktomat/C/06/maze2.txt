@@ -1,0 +1,32 @@
+31x64
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+W        W        W                                            W
+W  WWWW  W  WWWWWWW  WWWWWWWWWWWWWWWWWWWWWWWWWWWW  WWWWWWWWWW  W
+W     W     W        W     W     W              W     W        W
+WWWW  W  WWWW  WWWWWWW  W  W  W  W  WWWWWWWWWW  WWWW  W  WWWWWWW
+W     W  W     W        W     W  W        W  W  W     W     W  W
+W  WWWW  W  WWWW  WWWWWWWWWWWWWWWWWWW  WWWWWWW  WWWWWWWWWW  WWWW
+W  W     W  W  W  W              W  W  W     W        W  W     W
+W  WWWWWWW  WWWW  W  WWWWWWWWWW  W  W  W  W  WWWW  W  WWWWWWW  W
+W        W  W     W     W     W  W  W     W     W  W           W
+W  WWWW  W  W  WWWWWWW  WWWW  W  WWWWWWWWWWWWW  W  WWWWWWWWWWWWW
+W  W     W  W        W     W  W              W  W           W  W
+W  W  WWWW  WWWWWWWWWWWWW  W  WWWWWWWWWWWWW  W  WWWW  WWWW  WWWW
+W  W  W                    W              W  W     W  W  W     W
+W  W  W  WWWWWWWWWWWWWWWWWWWWWW  WWWWWWW  WW WWWW  W  W  WWWW  W
+W  W        W     W                    W  W     W  W     W     W
+W  WWWWWWW  W  W  W  WWWW  WWWWWWW  WWWWWWW  W  W  WWWW  W  WWWW
+W  W        W  W  W     W        W  W        W  W  W  W  W     W
+W  W  WWWWWWW  W  WWWW  W  WWWWWWWWWW  WWWWWWWWWW  W  W  WWWW  W
+W  W  W        W     W  W     W     W           W  W     W  W  W
+W  W  W  WWWWWWWWWWWWW  WWWW  W  WWWWWWWWWWWWW  W  WWWWWWWWWW  W
+W  W                       W  W     W  W  W     W        W  W  W
+W  W  WWWWWWWWWWWWWWWWWWWWWWWWWWWW  WWWWWWW  WWWWWWWWWW  WWWW  W
+W  W        W     W  W        W  W  W  W              W  W     W
+WWWWWWWWWW  W  W  W  W  WWWW  WWWW  WWWW  WWWW  WWWWWWW  W  WWWW
+W     W     W  W  W  W  W  W        W  W  W     W     W  W     W
+W  WWWW  WWWW  W  W  W  WWWWWWWWWWWWWWWW  W  WWWW  W  W  WWWWWWW
+W           W  W  W  W                 W  W  W     W  W        W
+WWWWWWWWWW  WWWW  W  WWWWWWWWWWWWWWWW  W  W  WWWWWWWWWWWWWWWW  W
+S                 W                 W     W              W     F
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
