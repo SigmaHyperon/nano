@@ -38,6 +38,7 @@ public class Warenkorb {
 			if(this.artfeld[i].getBezeichnung() == a.getBezeichnung() && this.artfeld[i].getPreis() == a.getPreis()){
 				this.artfeld[i] = this.artfeld[--this.anzahl];
 				this.artfeld[this.anzahl] = null;
+				i--;
 			}
 		}
 	}
