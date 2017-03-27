@@ -1,0 +1,3 @@
+# nano
+
+this is a compiation of stuff we came up with while being bored...
