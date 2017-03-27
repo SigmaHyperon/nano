@@ -1,0 +1,35 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+div#header {
+	height: 100px;
+	border-bottom: 1px solid #ccc;
+}
+
+div#header img {
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+	float: right;
+}
+
+div#header div.char-tab {
+	border: 1px solid #777;
+	width: 150px;
+	height: 90%;
+	margin: 5px 0px 5px 5px;
+	border-radius: 5px;
+	background: #ccc;
+	text-align: center;
+	vertical-align: bottom;
+	float: left;
+	display: inline;
+}
+
+div#header div.char-tab div {
+	vertical-align: bottom;
+	height: auto;
+	bottom: 0;
+	position: relative;
+}
