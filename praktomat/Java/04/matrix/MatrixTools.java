@@ -127,25 +127,24 @@ public class MatrixTools {
 		}
 	}
 	public static int[][] getMatrixFromFile(String filename) throws IOException{
-		ArrayList<ArrayList<Integer>> cache = new ArrayList<>();
 		File file = new File(filename);
 		Scanner scan = new Scanner(file);
+		int linecount = 0;
+		while (scan.hasNextLine()){
+			linecount++;
+			scan.nextLine();
+		}
+		int[][] matrix = new int[linecount][];
+		int index = 0;
+		scan.reset();
 		while(scan.hasNextLine()){
 			String[] line = scan.nextLine().split(" ");
-			ArrayList<Integer> lineCache = new ArrayList<>();
 			for (int i = 0; i < line.length; i++){
-				lineCache.add(Integer.parseInt(line[i]));
+				matrix[index][i] = Integer.parseInt(line[i]);
 			}
-			cache.add(lineCache);
+			index++;
 		}
 		scan.close();
-		int[][] matrix = new int[cache.size()][];
-		for (int k = 0; k < cache.size(); k++) {
-		    matrix[k] = new int[cache.get(k).size()];
-		    for(int l = 0; l < cache.get(k).size(); l++){
-		    	matrix[k][l] = cache.get(k).get(l);
-		    }
-		}
 		return matrix;
 	}
 }
