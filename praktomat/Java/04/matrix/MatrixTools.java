@@ -82,18 +82,12 @@ public class MatrixTools {
 			return false;
 		}
 	}
-	public static int matrixSpur(int[][] matrix) throws InvalidMatrixException, MatricesNotMultipliableException, MatrixNotInitializedException, MatrixSpurNotAvailableException{
+	public static int matrixSpur(int[][] matrix) throws InvalidMatrixException, MatrixNotInitializedException, MatrixSpurNotAvailableException{
 		MatrixDimension aD = new MatrixDimension(matrix);
-		if(!isSquare(matrix)) throw new MatrixSpurNotAvailableException("matrix not square");
-		try{
-			int sum = 0;
-			for(int k = 0; k < matrix.length; k++){
-				sum += matrix[k][k];
-			}
-			return sum;
-		}catch(Exception e){
-			return 0;
-		}
+		if(aD.getWidth() != aD.getHeight()) throw new MatrixSpurNotAvailableException("matrix not square");
+		int sum = 0;
+		for(int k = 0; k < matrix.length; k++) sum += matrix[k][k];
+		return sum;
 	}
 	public static int[][] matrixMul(int[][] a, int[][] b) throws InvalidMatrixException, MatricesNotMultipliableException, MatrixNotInitializedException{
 
