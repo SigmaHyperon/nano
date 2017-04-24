@@ -82,18 +82,12 @@ public class MatrixTools {
 			return false;
 		}
 	}
-	public static int matrixSpur(int[][] matrix) throws InvalidMatrixException, MatricesNotMultipliableException, MatrixNotInitializedException, MatrixSpurNotAvailableException{
+	public static int matrixSpur(int[][] matrix) throws InvalidMatrixException, MatrixNotInitializedException, MatrixSpurNotAvailableException{
 		MatrixDimension aD = new MatrixDimension(matrix);
-		if(!isSquare(matrix)) throw new MatrixSpurNotAvailableException("matrix not square");
-		try{
-			int sum = 0;
-			for(int k = 0; k < matrix.length; k++){
-				sum += matrix[k][k];
-			}
-			return sum;
-		}catch(Exception e){
-			return 0;
-		}
+		if(aD.getWidth() != aD.getHeight()) throw new MatrixSpurNotAvailableException("matrix not square");
+		int sum = 0;
+		for(int k = 0; k < matrix.length; k++) sum += matrix[k][k];
+		return sum;
 	}
 	public static int[][] matrixMul(int[][] a, int[][] b) throws InvalidMatrixException, MatricesNotMultipliableException, MatrixNotInitializedException{
 
@@ -133,25 +127,24 @@ public class MatrixTools {
 		}
 	}
 	public static int[][] getMatrixFromFile(String filename) throws IOException{
-		ArrayList<ArrayList<Integer>> cache = new ArrayList<>();
 		File file = new File(filename);
 		Scanner scan = new Scanner(file);
+		int linecount = 0;
+		while (scan.hasNextLine()){
+			linecount++;
+			scan.nextLine();
+		}
+		int[][] matrix = new int[linecount][];
+		int index = 0;
+		scan.reset();
 		while(scan.hasNextLine()){
 			String[] line = scan.nextLine().split(" ");
-			ArrayList<Integer> lineCache = new ArrayList<>();
 			for (int i = 0; i < line.length; i++){
-				lineCache.add(Integer.parseInt(line[i]));
+				matrix[index][i] = Integer.parseInt(line[i]);
 			}
-			cache.add(lineCache);
+			index++;
 		}
 		scan.close();
-		int[][] matrix = new int[cache.size()][];
-		for (int k = 0; k < cache.size(); k++) {
-		    matrix[k] = new int[cache.get(k).size()];
-		    for(int l = 0; l < cache.get(k).size(); l++){
-		    	matrix[k][l] = cache.get(k).get(l);
-		    }
-		}
 		return matrix;
 	}
 }
